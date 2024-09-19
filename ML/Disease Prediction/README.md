@@ -1,43 +1,63 @@
-Disease Prediction using Machine Learning
-This project implements a disease prediction system using machine learning algorithms trained on symptom data.
+<!DOCTYPE html>
+<html>
+<head>
 
-Dataset
-Training Data: dataset/Training.csv
-Testing Data: dataset/Testing.csv
-Each record represents symptoms (as binary features) and the corresponding disease.
+</head>
+<body>
 
-Installation
-Ensure you have Python 3.x installed. Install the required libraries:
+<h1>Disease Prediction using Machine Learning</h1>
 
-bash
-Copy code
-pip install numpy pandas scikit-learn scipy
-Usage
-Run the Script:
+<p>This project implements a disease prediction system using machine learning algorithms trained on symptom data.</p>
 
-bash
-Copy code
-python disease_prediction.py
-This will:
+<h2>Dataset</h2>
 
-Load and preprocess the data.
-Train classifiers: Support Vector Machine (SVM), Gaussian Naive Bayes (GNB), and Random Forest (RF).
-Evaluate models and print accuracy scores.
-Predict Disease:
+<ul>
+    <li><strong>Training Data:</strong> <code>dataset/Training.csv</code></li>
+    <li><strong>Testing Data:</strong> <code>dataset/Testing.csv</code></li>
+</ul>
 
-Use the predictDisease function by providing symptoms as a comma-separated string.
+<p>Each record represents symptoms (as binary features) and the corresponding disease.</p>
 
-python
-Copy code
-predictions = predictDisease("Headache,Cough,Loss Of Appetite")
+<h2>Installation</h2>
+
+<p>Ensure you have Python 3.x installed. Install the required libraries:</p>
+
+<pre><code>pip install numpy pandas scikit-learn scipy
+</code></pre>
+
+<h2>Usage</h2>
+
+<ol>
+    <li>
+        <p><strong>Run the Script:</strong></p>
+        <pre><code>python disease_prediction.py
+</code></pre>
+        <p>This will:</p>
+        <ul>
+            <li>Load and preprocess the data.</li>
+            <li>Train classifiers: Support Vector Machine (SVM), Gaussian Naive Bayes (GNB), and Random Forest (RF).</li>
+            <li>Evaluate models and print accuracy scores.</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>Predict Disease:</strong></p>
+        <p>Use the <code>predictDisease</code> function by providing symptoms as a comma-separated string.</p>
+        <pre><code>predictions = predictDisease("Headache,Cough,Loss Of Appetite")
 print(predictions)
-Sample Output:
-
-python
-Copy code
-{
+</code></pre>
+        <p><strong>Sample Output:</strong></p>
+        <pre><code>{
   'rf_model_prediction': 'Jaundice',
   'naive_bayes_prediction': 'Jaundice',
   'svm_model_prediction': 'Jaundice',
   'final_prediction': 'Jaundice'
 }
+</code></pre>
+    </li>
+</ol>
+
+
+<hr>
+
+</body>
+</html>
