@@ -1,5 +1,5 @@
 Disease Prediction using Machine Learning
-This project builds a disease prediction system using machine learning algorithms trained on symptom data.
+This project implements a disease prediction system using machine learning algorithms trained on symptom data.
 
 Dataset
 Training Data: dataset/Training.csv
@@ -7,7 +7,7 @@ Testing Data: dataset/Testing.csv
 Each record represents symptoms (as binary features) and the corresponding disease.
 
 Installation
-Ensure you have Python 3.x installed. Install required libraries:
+Ensure you have Python 3.x installed. Install the required libraries:
 
 bash
 Copy code
@@ -20,8 +20,8 @@ Copy code
 python disease_prediction.py
 This will:
 
-Load and preprocess data.
-Train classifiers: SVM, Gaussian Naive Bayes, Random Forest.
+Load and preprocess the data.
+Train classifiers: Support Vector Machine (SVM), Gaussian Naive Bayes (GNB), and Random Forest (RF).
 Evaluate models and print accuracy scores.
 Predict Disease:
 
@@ -41,5 +41,3 @@ Copy code
   'svm_model_prediction': 'Jaundice',
   'final_prediction': 'Jaundice'
 }
-License
-This project is licensed under the MIT License.
